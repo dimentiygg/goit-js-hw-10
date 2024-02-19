@@ -33,25 +33,3 @@ function onSubmit(event) {
       });
     });
 }
-
-// const promise = new Promise((resolve, reject) => {
-//   if (form.state.value === 'fulfilled') {
-//     resolve(
-//       setTimeout(() => {
-//         iziToast.success({
-//           title: 'OK',
-//           message: `✅ Fulfilled promise in ${formDelay}ms`,
-//         });
-//       }, formDelay)
-//     );
-//   } else {
-//     reject(
-//       setTimeout(() => {
-//         iziToast.error({
-//           title: 'Error',
-//           message: `❌ Rejected promise in ${formDelay}ms`,
-//         });
-//       }, formDelay)
-//     );
-//   }
-// });
