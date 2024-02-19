@@ -22,10 +22,7 @@ const options = {
   onClose(selectedDates) {
     userSelectedDate = selectedDates[0].getTime();
     console.log(selectedDates[0]);
-    if (
-      new Date().getTime() > selectedDates[0].getTime() ||
-      new Date().getTime() == selectedDates[0].getTime()
-    ) {
+    if (new Date().getTime() >= selectedDates[0].getTime()) {
       button.disabled = true;
       iziToast.error({
         title: 'Error',
